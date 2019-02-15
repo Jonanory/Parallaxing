@@ -18,11 +18,11 @@ namespace Parallax
         public bool logarithmicZDistances = false;
 
         /// <summary>
-        /// If true, the player has to manually trigger the items to move using the function
+        /// If false, the player has to manually trigger the items to move using the function
         ///          ParallaxCamera.Notify("Camera Moved")
-        /// If left unchecked, items are triggered on Update.
+        /// If left checked, items are triggered on Update.
         /// </summary>
-        public bool manualParallaxing = false;
+        public bool automaticParallaxing = true;
 
         /// <summary>
         /// Whether to make the items reposition themselves in the z axis to keep consistent on what is supposed to be near and far away.
@@ -73,7 +73,7 @@ namespace Parallax
 
         private void Update()
         {
-            if (!manualParallaxing)
+            if (automaticParallaxing)
             {
                 if (HasMoved())
                 {

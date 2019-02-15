@@ -12,13 +12,13 @@ namespace Parallax
 
         private ParallaxCamera pCamera;
 
-        [SerializeField]
         private Vector3 naturalPosition = Vector3.zero;
         public Vector3 NaturalPosition
         {
             get { return naturalPosition; }
         }
 
+        [SerializeField]
         /// <summary>
         ///     The position of the item, before any logarithmic manipulation is taken into account
         /// </summary>
