@@ -2,7 +2,7 @@
 
 ## Summary
 
-Uses maths to move items in a parallaxing manner while the camera moves
+Uses maths to move items in a parallaxing manner
 
 ## To Use
 
@@ -20,4 +20,4 @@ The automatic parallaxing can be switched off in the camera's settings.
 
 ## Logarithmic Z Distances
 
-If you have items that you wish to make move like they are far away from the camera, then the ParallaxCamera has a "Logarithmic Z Distances" option. When ticked, the z value in all the ParallaxItem's natural position value will be treated as an exponent, rather than a definitive value. So, for example, a Z value of 2 in an ParallaxItem's natural position will mean that the item will be treated as if it were 10<sup>2</sup> = 100 units away.
+If you have items that you wish to make move like they are far away from the camera, then the ParallaxCamera has a "Logarithmic Z Distances" option. When ticked, the Z value in all of the ParallaxItem's natural positions will be treated as an exponent, rather than a definitive value. So, for example, a Z value of 2 in an ParallaxItem's natural position will mean that it will be treated as if it were 10<sup>2</sup> = 100 units away.
