@@ -30,3 +30,4 @@ namespace Parallax
             serializedObject.ApplyModifiedProperties();
         }
     }
+}
